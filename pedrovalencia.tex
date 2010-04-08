@@ -1,0 +1,97 @@
+%% start of file `jdoe_classic.tex'.
+%% Copyright 2006 Xavier Danaux.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[letterpaper,10pt]{moderncv}
+
+% moderncv styles
+%\moderncvstyle{casual}       % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvstyle{classic}       % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}   % replace by the encoding you are using
+
+% personal data (the given example is exhaustive; just give what you want)
+\firstname{Pedro}
+\familyname{Valencia}
+\title{\large{Estudiante de Ingeniería Civil en Computación}}
+\address{Larraín 6164\\La Reina, Santiago}  % for classic style
+%\address{12 somestreet, 3456 somecity} % for casual style
+\phone{+56 (09) 993 632 56}
+\email{pvalenci@dcc.uchile.cl}
+\extrainfo{\weblink{pvalencia.github.com}}
+%\photo[64pt]{jdoe_picture} % also optional, and the optional argument is the height the picture must be resized to
+\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+% command and color used in this document, independently from moderncv 
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+%\makequote
+
+\section{Información Personal}
+\cvitem{Nombre}{Pedro Andrés Valencia Burón}
+\cvitem{RUT}{16.432.193-2}
+\cvitem{Estado civil}{Soltero}
+\cvitem{Ocupación}{Estudiante}
+\cvitem{Nacionalidad}{Chileno-Holandés}
+
+\section{Educación}
+\cventry{2004--a la fecha}{Ingeniería Civil en Computación}{Escuela de Ingeniería y Ciencias}{Universidad de Chile}{}{}
+\cventry{1990--2003}{Educación pre-básica, básica y medida}{Colegio Las Américas}{}{}{}
+
+\section{Experiencia Laboral}
+\cventry{03/2010}{Diseñador y Programador PHP}{CONFECH}{Coordina Chile}{}{Diseño y desarrollo de sistema para la organización de voluntariados, con framework CakePHP y jQuery. Ver \weblink{www.coordinachile.cl}}
+\cventry{12/2009--01/2010}{Programador Python--C}{Laboratorio Alges}{Práctica Profesional II}{}{Programación y optimización en lenguaje python y c de algoritmos para el procesamiento de imágenes. Correspondiente a la práctica profesional II del plan de estudios de computación en la Universidad de Chile.
+}
+\cventry{06/2009--07/2009}{Diseñador y Programador PHP}{Impresiones Prograph}{}{}{Dise\~no y desarrollo de sistema de información administrativa a medida en plataforma web con framework CakePHP y jQuery}
+\cventry{06/2008--07/2008}{Diseñador y Programador PHP}{InkJet}{}{}{Dise\~no y desarrollo de sistema de información administrativa a medida en plataforma web con framework CakePHP y Prototype-Scriptaculous.}
+\cventry{12/2007--01/2008}{Programador J2EE}{Synapsis}{Práctica Profesional I}{}{Evolución y mantención de software en aplicación J2EE con framework Spring y JSF. Correspondiente a la práctica profesional I del plan de estudios de computación en la Universidad de Chile.}
+\cventry{03/2007--08/2007}{Profesor Auxiliar}{Escuela de Ingeniería y Ciencias}{Universidad de Chile}{}{Introducción a la Computación, curso para primer año de ingeniería}
+
+\closesection{}
+\pagebreak{}
+
+\section{Idiomas}
+\cvlanguage{Español}{Nativo}{}
+\cvlanguage{Inglés}{Intermedio}{Michigan Test of English Language Proficiency aprobado.}
+
+\section{Habilidades Computacionales}
+\cvcomputer{sist. operativos}{Linux, Windows}{administration}{Apache, Mailman}
+\cvcomputer{programación}{Java, C/C++, PHP, Shell, Ruby, Python, Javascript}{Control de Versiones}{SVN, GIT}
+\cvcomputer{diseño web}{XHTML, CSS, AJAX}{bases de datos}{MySQL, PostgreSQL, sqlite}
+\cvcomputer{frameworks--librerías}{CakePHP, jQuery, Prototype, Rails, Django, GTK+, QT, Spring, JSF}{científico}{Matlab, Maple, SciPy}
+
+\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{jdoe_publications}
+
+\end{document}
+
+
+%% end of file `jdoe_classic.tex'.
