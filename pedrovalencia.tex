@@ -9,8 +9,8 @@
 \documentclass[letterpaper,10pt]{moderncv}
 
 % moderncv styles
-%\moderncvstyle{casual}       % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
-\moderncvstyle{classic}       % idem
+%\moderncvtheme{casual}       % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme{classic}       % idem
 
 % character encoding
 \usepackage[utf8]{inputenc}   % replace by the encoding you are using
@@ -19,16 +19,17 @@
 \firstname{Pedro}
 \familyname{Valencia}
 \title{\large{Estudiante de Ingeniería Civil en Computación}}
-\address{Larraín 6164\\La Reina, Santiago}  % for classic style
+\address{Pedro Torres 246, CP 779 0721}{Ñuñoa, Santiago, Chile}  % for classic style
 %\address{12 somestreet, 3456 somecity} % for casual style
 \phone{+56 (09) 993 632 56}
 \email{pvalenci@dcc.uchile.cl}
-\extrainfo{\weblink{pvalencia.github.com}}
+%\extrainfo{\weblink[]{pvalencia.github.com}}
 %\photo[64pt]{jdoe_picture} % also optional, and the optional argument is the height the picture must be resized to
-\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
+%\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
 
 %\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
 
+\begin{document}
 % the ConTeXt symbol
 \def\ConTeXt{%
   C%
@@ -50,7 +51,6 @@
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
-\begin{document}
 \maketitle
 %\makequote
 
@@ -61,32 +61,72 @@
 \cvitem{Ocupación}{Estudiante}
 \cvitem{Nacionalidad}{Chileno-Holandés}
 
+\bigskip
+
 \section{Educación}
 \cventry{2004--a la fecha}{Ingeniería Civil en Computación}{Escuela de Ingeniería y Ciencias}{Universidad de Chile}{}{}
+
 \cventry{1990--2003}{Educación pre-básica, básica y medida}{Colegio Las Américas}{}{}{}
 
+\bigskip
+
 \section{Experiencia Laboral}
-\cventry{04/2010-- actualmente}{Programador Python--QT}{Laboratorio Alges}{Software MIMA}{}{Desarrollo de software para análisis de imágenes mineralógicas \emph{MIMA}, basado en QT y Python.}
-\cventry{03/2010}{Diseñador y Programador PHP}{CONFECH}{Coordina Chile}{}{Diseño y desarrollo de sistema para la organización de voluntariados, con framework CakePHP y jQuery. Ver \weblink{www.coordinachile.cl}}
+
+\cventry{04/2010-- actualmente}{Programador Python--QT}{Laboratorio Alges}{Software de análisis de imágenes}{}{Desarrollo de software para análisis de imágenes mineralógicas, basado en QT y Python, en especial implementación de las interfaces de usuario.}
+
+\bigskip
+\cventry{03/2010}{Diseñador y Programador PHP}{CONFECH}{Coordina Chile}{}{Diseño y desarrollo de sistema para la organización de voluntariados con motivo de desastre natural, con framework CakePHP y jQuery. Ver www.coordinachile.cl}
+
+\bigskip
 \cventry{12/2009--01/2010}{Programador Python--C}{Laboratorio Alges}{Práctica Profesional II}{}{Programación y optimización en lenguaje python y c de algoritmos para el procesamiento de imágenes. Correspondiente a la práctica profesional II del plan de estudios de computación en la Universidad de Chile.
 }
-\cventry{06/2009--07/2009}{Diseñador y Programador PHP}{Impresiones Prograph}{}{}{Dise\~no y desarrollo de sistema de información administrativa a medida en plataforma web con framework CakePHP y jQuery}
-\cventry{06/2008--07/2008}{Diseñador y Programador PHP}{InkJet}{}{}{Dise\~no y desarrollo de sistema de información administrativa a medida en plataforma web con framework CakePHP y Prototype-Scriptaculous.}
-\cventry{12/2007--01/2008}{Programador J2EE}{Synapsis}{Práctica Profesional I}{}{Evolución y mantención de software en aplicación J2EE con framework Spring y JSF. Correspondiente a la práctica profesional I del plan de estudios de computación en la Universidad de Chile.}
-\cventry{03/2007--08/2007}{Profesor Auxiliar}{Escuela de Ingeniería y Ciencias}{Universidad de Chile}{}{Introducción a la Computación, curso para primer año de ingeniería}
+
+\bigskip
+\cventry{06/2009--07/2009}{Diseñador y Programador PHP}{Impresiones Prograph}{}{}{Dise\~no y desarrollo de sistema de información administrativa a medida en plataforma web con framework CakePHP y jQuery.}
+
+\bigskip
+\cventry{06/2008--07/2008}{Diseñador y Programador PHP}{InkJet}{}{}{Dise\~no y desarrollo de sistema de información administrativa a medida en plataforma web con framework CakePHP y Prototype-Scriptaculous, modelación del proceso de producción y administración de cartera de cliente.}
+
+\bigskip
+\cventry{12/2007--01/2008}{Programador J2EE}{Synapsis}{Práctica Profesional I}{}{Evolución y mantención de software en aplicación para la gestión de institución gubernamental implementado en J2EE con framework Spring y JSF. Correspondiente a la práctica profesional I del plan de estudios de computación en la Universidad de Chile.}
+
+\bigskip
+\cventry{03/2007--08/2007}{Profesor Auxiliar}{Escuela de Ingeniería y Ciencias}{Universidad de Chile}{}{Ayudante de curso Introducción a la Computación, para estudiantes de primer año de ingeniería enseñando nociones de programación, orientación a objetos y matlab.}
+
+\bigskip
+\cventry{03/2007--12/2007}{Encargado de alfabetización digital}{Capsocial trabajos voluntarios}{}{Trabajo Voluntario}{Diseño del programa de alfabetización digital para comunidades rurales del voluntariado universitario capsocial.}
 
 \closesection{}
-\pagebreak{}
+%\pagebreak{}
+
+\bigskip
 
 \section{Idiomas}
 \cvlanguage{Español}{Nativo}{}
 \cvlanguage{Inglés}{Intermedio}{Michigan Test of English Language Proficiency aprobado.}
+
+\bigskip
 
 \section{Habilidades Computacionales}
 \cvcomputer{sist. operativos}{Linux, Windows}{administration}{Apache, Mailman}
 \cvcomputer{programación}{Java, C/C++, PHP, Shell, Ruby, Python, Javascript}{control de versiones}{SVN, GIT}
 \cvcomputer{diseño web}{XHTML, CSS, AJAX}{bases de datos}{MySQL, PostgreSQL, sqlite}
 \cvcomputer{frameworks--librerías}{CakePHP, jQuery, Prototype, Rails, Django, GTK+, QT, Spring, JSF}{científico}{Matlab, Maple, SciPy}
+
+
+\bigskip
+
+\section{Intereses}
+
+\begin{itemize}
+\item Me he relacionado durante mi estad\'ia en la universidad con el trabajo voluntario para la ayuda de sectores vulnerables de mi pa\'is. Adem\'as la investigaci\'on permanente de distintas tecnolog\'ias me ha llevado a interesarme en temas relacionados con el software libre y/o de c\'odigo abierto, en especial el sistema operativo linux y varias de sus distribuciones, asistiendo a distintas conferencias del tema en Chile.
+
+\item Las interfaces de usuario han sido un motivo de interés, en particular orientada a personas con discapacidades de distinto tipo y a dispositivos móviles.
+
+\item Junto con lo mencionado anteriormente, las metodologías ágiles de desarrollo son un tema de especial interés por su efecto favorable en el desarrollo de software y en los integrantes de un équipo de desarrollo.
+
+\item Actualmente estoy impulsando la creaci\'on de una comunidad de Python en Chile para la difusi\'on de este lenguaje en la industria y el apoyo mutuo entre desarrolladores involucrados en este.
+\end{itemize}
 
 \nocite{*}
 %\bibliographystyle{plain}
